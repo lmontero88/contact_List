@@ -39,8 +39,7 @@ export const Contacts = () => {
 
 	useEffect(() => {
 		getList();
-		handleDeleteOnclick();
-	}, []);
+	}, [handleDeleteOnclick]);
 
 	return (
 		<div className="container">
@@ -61,7 +60,7 @@ export const Contacts = () => {
 									phone={contact.phone}
 									email={contact.email}
 									id={contact.id}
-									handleDeleteOnclick={contact.handleDeleteOnclick}
+									handleDeleteOnclick={handleDeleteOnclick}
 								/>
 							);
 						})}

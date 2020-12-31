@@ -58,9 +58,9 @@ ContactCard.propTypes = {
 	full_name: PropTypes.string,
 	adress: PropTypes.string,
 	email: PropTypes.string,
-	phone: PropTypes.number,
-	id: PropTypes.number,
-	handleDeleteOnclick: PropTypes.number
+	phone: PropTypes.string,
+	id: PropTypes.string,
+	handleDeleteOnclick: PropTypes.func
 };
 
 /**
